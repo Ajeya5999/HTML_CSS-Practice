@@ -1,0 +1,51 @@
+/* --- General Properties --- */
+
+:root {
+    --primary-theme-color: #3a3a3a;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-theme-color);
+}
+
+div{
+    display: inline-block;
+}
+
+/* --- Site Header --- */
+
+header {
+    background-color: #97d5c9;
+    color: var(--primary-theme-color);
+}
+
+#site-logo-container {
+    border: solid black 5px;
+}
+
+#site-logo-img-container {
+    background-color: var(--primary-theme-color);
+    border-radius: 50%;
+}
+
+#site-logo-img-container img {
+    max-width: 60px;
+    max-height: 60px;
+}
+
+#content-table {
+    border: solid red 5px;
+}
+
+#content-table ul {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    border: solid black 5px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
