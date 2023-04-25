@@ -2,6 +2,7 @@
 
 :root {
     --primary-theme-color: #3a3a3a;
+    --secondary-theme-color: #97d5c9;
 }
 
 body {
@@ -17,16 +18,17 @@ div{
 /* --- Site Header --- */
 
 header {
-    background-color: #97d5c9;
+    background-color: var(--secondary-theme-color);
     color: var(--primary-theme-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+    /* --- Logo And Name --- */
+
 #site-logo-container {
     width: 140px;
-    border: solid black 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,9 +50,7 @@ header {
     font-weight: bold;
 }
 
-#content-table {
-    border: solid black 5px;
-}
+    /* --- Content Table --- */
 
 #content-table ul {
     margin: 0;
@@ -62,17 +62,45 @@ header {
     align-items: center;
 }
 
+    /* --- Search Bar --- */
+
 #search-bar {
-    border: solid black 5px;
+    height: 22px;
+}
+
+#search-bar form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #search-bar button {
+    background-color: white;
+    height: 22px;
+    width: 20px;
     margin: 0;
-    padding: 0;
+    padding: 0 0 2px 0;
+    border-width: 0;
+    border-radius: 0;
 }
 
+#search-bar input {
+    height: 22px;
+    border-width: 0;
+}
+
+    /* --- User Profile --- */
+
 #user-profile {
-    border: solid black 5px;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#user-profile button {
+    background-color: var(--secondary-theme-color);
+    border-width: 0;
 }
 
 #user-pfp-container {
@@ -80,7 +108,7 @@ header {
     padding: 0 0 0 0;
     height: 60px;
     width: 60px;
-    border: solid red 5px;
+    border: solid var(--primary-theme-color) 2px;
     border-radius: 50%;
     overflow: hidden;
     box-sizing: border-box;
