@@ -19,10 +19,17 @@ div{
 header {
     background-color: #97d5c9;
     color: var(--primary-theme-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #site-logo-container {
+    width: 140px;
     border: solid black 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #site-logo-img-container {
@@ -35,17 +42,51 @@ header {
     max-height: 60px;
 }
 
+#site-name {
+    width: 70px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
 #content-table {
-    border: solid red 5px;
+    border: solid black 5px;
 }
 
 #content-table ul {
     margin: 0;
     padding: 0;
     width: 300px;
-    border: solid black 5px;
     list-style-type: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#search-bar {
+    border: solid black 5px;
+}
+
+#search-bar button {
+    margin: 0;
+    padding: 0;
+}
+
+#user-profile {
+    border: solid black 5px;
+}
+
+#user-pfp-container {
+    background-color: #2b2f3b;
+    padding: 0 0 0 0;
+    height: 60px;
+    width: 60px;
+    border: solid red 5px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#user-pfp-container img {
+    max-width: 60px;
+    max-height: 60px;   
 }

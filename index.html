@@ -1,16 +1,20 @@
 <html>
     <head>
         <title>Music Player (Major Project 1)</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="index.css"> 
     </head>
     <body>
         <!-- Site Header -->
         <header>
+            <!-- Logo and Name -->
             <div id="site-logo-container">
                 <div id="site-logo-img-container">
-                    <img src="./images/logo.png" height=300 width=300 alt="logo">
+                    <img src="./images/logo.png" alt="logo">
                 </div>
-                Deku's JukeBox
+                <div id="site-name">
+                    Deku's JukeBox
+                </div>
             </div>
             <div id="content-table">
                 <ul>
@@ -19,7 +23,21 @@
                     <li>What's New</li>
                 </ul>
             </div>
+            <div id="search-bar">
+                <form>
+                    <button type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                    <input type="text" placeholder="Search">
+                    <i class="fa fa-microphone"></i>
+                </form>
+            </div>
+            <div id="user-profile">
+                <i class="fa fa-bell fa-2x"></i>
+                <div id="user-pfp-container">
+                    <img src="./images/profilePicture.jpg" alt ="Profile Picture">
+                </div>
+            </div>
         </header>
-
     </body>
 </html>
