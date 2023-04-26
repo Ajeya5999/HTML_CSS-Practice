@@ -3,16 +3,22 @@
 :root {
     --primary-theme-color: #3a3a3a;
     --secondary-theme-color: #97d5c9;
+    --tertiary-theme-color: white;
 }
 
 body {
     margin: 0;
     padding: 0;
     background-color: var(--primary-theme-color);
+    color: var(--tertiary-theme-color);
 }
 
 div{
     display: inline-block;
+}
+
+.whitespace {
+    width: 100%;
 }
 
 /* --- Site Header --- */
@@ -20,9 +26,11 @@ div{
 header {
     background-color: var(--secondary-theme-color);
     color: var(--primary-theme-color);
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
 }
 
     /* --- Logo And Name --- */
@@ -98,13 +106,13 @@ header {
 
 #search-bar input {
     background-color: var(--primary-theme-color);
-    color: white;
+    color: var(--tertiary-theme-color);
     height: var(--search-bar-height);
     border-width: 0;
 }
 
 #search-bar i {
-    color: white;
+    color: var(--tertiary-theme-color);
 }
 
     /* --- User Profile --- */
@@ -134,4 +142,10 @@ header {
 #user-pfp-container img {
     max-width: 60px;
     max-height: 60px;   
+}
+
+/* --- Adding whitespace to compensate for header --- */
+
+#header-space {
+    height: 70px;
 }
