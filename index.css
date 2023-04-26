@@ -149,3 +149,12 @@ header {
 #header-space {
     height: 70px;
 }
+
+/* --- Site Content --- */
+
+main {
+    display: inline-block;
+    width: 70%;
+    
+    box-sizing: border-box;
+}
