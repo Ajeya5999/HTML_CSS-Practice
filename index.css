@@ -62,10 +62,22 @@ header {
     align-items: center;
 }
 
+#content-table a{
+    color: var(--primary-theme-color);
+    text-decoration: none;
+    transition: color 0.25s;
+}
+
+#content-table a:hover {
+    color: black;
+    transition: color 0.5s;
+}
+
     /* --- Search Bar --- */
 
 #search-bar {
-    height: 22px;
+    --search-bar-height: 22px;
+    height: var(--search-bar-height);
 }
 
 #search-bar form {
@@ -75,8 +87,8 @@ header {
 }
 
 #search-bar button {
-    background-color: white;
-    height: 22px;
+    background-color: var(--primary-theme-color);
+    height: var(--search-bar-height);
     width: 20px;
     margin: 0;
     padding: 0 0 2px 0;
@@ -85,8 +97,14 @@ header {
 }
 
 #search-bar input {
-    height: 22px;
+    background-color: var(--primary-theme-color);
+    color: white;
+    height: var(--search-bar-height);
     border-width: 0;
+}
+
+#search-bar i {
+    color: white;
 }
 
     /* --- User Profile --- */
@@ -105,13 +123,12 @@ header {
 
 #user-pfp-container {
     background-color: #2b2f3b;
-    padding: 0 0 0 0;
+    padding: 0;
     height: 60px;
     width: 60px;
-    border: solid var(--primary-theme-color) 2px;
+    border: solid var(--primary-theme-color) 3px;
     border-radius: 50%;
     overflow: hidden;
-    box-sizing: border-box;
 }
 
 #user-pfp-container img {
