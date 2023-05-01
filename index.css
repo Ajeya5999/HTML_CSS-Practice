@@ -161,21 +161,17 @@ main {
     /* --- Playlist Carousel --- */
 
 #playlist-carousel {
-    --prism-radius: 500px;
+    --prism-radius: 250px;
     width: 100%;
     position: relative;
+    display: flex;
+    justify-content: center;
     transform-style: preserve-3d;
-    perspective: 1000px;
-    /* transition: transform 1s ease-in; */
 }
 
-/* #playlist-carousel:hover {
-    transform: rotateY(60deg);
-    transition: transform 1s ease-in;
-} */
+        /* --- Playlist Carousel Faces --- */
 
 .carousel-face {
-    left: 300px;
     position: absolute;
     width: 215px;
 }
@@ -185,9 +181,25 @@ main {
 }
 
 #face-one {
-    transform: translate3d(0, 0, 500px);
+    transform: translate3d(0, 0, var(--prism-radius));
 }
 
 #face-two {
-    transform: rotateY(60deg) translate3d(433px, 0, 250px);
+    transform: rotateY(60deg) translate3d(0, 0, var(--prism-radius));
+}
+
+#face-three {
+    transform: rotateY(120deg) translate3d(0, 0, var(--prism-radius));
+}
+
+#face-four {
+    transform: rotateY(180deg) translate3d(0, 0, var(--prism-radius));
+}
+
+#face-five {
+    transform: rotateY(240deg) translate3d(0, 0, var(--prism-radius));
+}
+
+#face-six {
+    transform: rotateY(300deg) translate3d(0, 0, var(--prism-radius));
 }
