@@ -31,6 +31,7 @@ header {
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    z-index: 1;
 }
 
     /* --- Logo And Name --- */
@@ -167,6 +168,7 @@ main {
     display: flex;
     justify-content: center;
     transform-style: preserve-3d;
+    transform: rotateY(var(--playlist-carousel-rotation, 0)deg);
 }
 
         /* --- Playlist Carousel Faces --- */
