@@ -168,7 +168,7 @@ main {
     display: flex;
     justify-content: center;
     transform-style: preserve-3d;
-    transform: rotateY(var(--playlist-carousel-rotation, 0)deg);
+    transition: transform 1s ease-in-out;
 }
 
         /* --- Playlist Carousel Faces --- */

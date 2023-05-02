@@ -31,5 +31,5 @@ function handlebtn(isLeft){
     else{
         rotationValue += 60;
     }
-    playlistCarousel.style.setProperty("--playlist-carousel-rotation", String(rotationValue));
+    playlistCarousel.style = "transform: rotateY("+ rotationValue + "deg)";
 }
