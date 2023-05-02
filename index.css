@@ -15,6 +15,8 @@ body {
 
 div{
     display: inline-block;
+    margin: 0;
+    padding: 0;
 }
 
 .whitespace {
@@ -161,14 +163,38 @@ main {
 
     /* --- Playlist Carousel --- */
 
+#playlist-carousel-container {
+    height: 245px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rotate-button {
+    border-width: 0;
+    border-radius: 0;
+    background-color: var(--primary-theme-color);
+    color: var(--secondary-theme-color);
+}
+
+#rotate-left {
+    order: 1;
+}
+
+#rotate-right {
+    order: 3;
+}
+
 #playlist-carousel {
     --prism-radius: 250px;
     width: 100%;
+    bottom: 100px;
     position: relative;
     display: flex;
     justify-content: center;
     transform-style: preserve-3d;
     transition: transform 1s ease-in-out;
+    order: 2;
 }
 
         /* --- Playlist Carousel Faces --- */

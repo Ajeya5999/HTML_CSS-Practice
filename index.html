@@ -47,7 +47,7 @@
                         <i class="fa fa-search"></i>
                     </button>
                     <input type="text" placeholder="Search">
-                    <button type="submit">
+                    <button>
                         <i class="fa fa-microphone"></i>
                     </button>
                 </form>
@@ -56,7 +56,7 @@
             <!-- User Profile -->
 
             <div id="user-profile">
-                <button type="submit">
+                <button>
                     <i class="fa fa-bell fa-2x"></i>
                 </button>
                 <div id="user-pfp-container">
@@ -75,31 +75,37 @@
             <!-- Playlist Carousel -->
 
             <section id="popular-playlists">
-                <button id="rotate-left">left</button>
-                <button id="rotate-right">right</button>
-                <div id="playlist-carousel">
+                <div id="playlist-carousel-container">
+                    <button class="rotate-button" id="rotate-left">
+                        <i class="fa fa-angle-left fa-5x"></i>
+                    </button>
+                    <button class="rotate-button" id="rotate-right">
+                        <i class="fa fa-angle-right fa-5x"></i>
+                    </button>
+                    <div id="playlist-carousel">
 
-                    <!-- Playlist Carousel Faces -->
+                        <!-- Playlist Carousel Faces -->
 
-                    <div class="carousel-face" id="face-one">
-                        <img src="./images/lofiPlaylist.png" alt="PlayList 1">
-                    </div>
-                    <div class="carousel-face" id="face-two">
-                        <img src="./images/hiphopPlaylist.png" alt="PlayList 2">
-                    </div>
-                    <div class="carousel-face" id="face-three">
-                        <img src="./images/acousticPlaylist.png" alt="PlayList 3">
-                    </div>
-                    <div class="carousel-face" id="face-four">
-                        <img src="./images/popPlaylist.png" alt="PlayList 4">
-                    </div>
-                    <div class="carousel-face" id="face-five">
-                        <img src="./images/bollywoodPlaylist.png" alt="PlayList 5">
-                    </div>
-                    <div class="carousel-face" id="face-six">
-                        <img src="./images/edmPlaylist.png" alt="PlayList 6">
-                    </div>
+                        <div class="carousel-face" id="face-one">
+                            <img src="./images/lofiPlaylist.png" alt="PlayList 1">
+                        </div>
+                        <div class="carousel-face" id="face-two">
+                            <img src="./images/hiphopPlaylist.png" alt="PlayList 2">
+                        </div>
+                        <div class="carousel-face" id="face-three">
+                            <img src="./images/acousticPlaylist.png" alt="PlayList 3">
+                        </div>
+                        <div class="carousel-face" id="face-four">
+                            <img src="./images/popPlaylist.png" alt="PlayList 4">
+                        </div>
+                        <div class="carousel-face" id="face-five">
+                            <img src="./images/bollywoodPlaylist.png" alt="PlayList 5">
+                        </div>
+                        <div class="carousel-face" id="face-six">
+                            <img src="./images/edmPlaylist.png" alt="PlayList 6">
+                        </div>
 
+                    </div>
                 </div>
             </section>
 
