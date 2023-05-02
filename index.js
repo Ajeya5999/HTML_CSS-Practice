@@ -24,12 +24,11 @@ btnRight.addEventListener('click', function(){
     //Playlsit Carousel Functions
 
 function handlebtn(isLeft){  
-    console.log("The value is " + rotationValue);
     if(isLeft){
         rotationValue -= 60;
     }
     else{
         rotationValue += 60;
     }
-    playlistCarousel.style = "transform: rotateY("+ rotationValue + "deg)";
+    playlistCarousel.style = `transform: rotateY(${rotationValue}deg)`;
 }

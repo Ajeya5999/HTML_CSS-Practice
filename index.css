@@ -23,6 +23,11 @@ div{
     width: 100%;
 }
 
+h3 {
+    color: var(--secondary-theme-color);
+    font-family: sans-serif;
+}
+
 /* --- Site Header --- */
 
 header {
@@ -164,6 +169,7 @@ main {
     /* --- Playlist Carousel --- */
 
 #playlist-carousel-container {
+    /* min-width: 716px; */
     height: 245px;
     display: flex;
     justify-content: space-between;
@@ -230,4 +236,45 @@ main {
 
 #face-six {
     transform: rotateY(300deg) translate3d(0, 0, var(--prism-radius));
+}
+
+/* Latest Release */
+
+.latest-release-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    /* Latest Release Tracks */
+
+.latest-release-track {
+    width: 50%;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.latest-release-track-info {
+    display: flex;
+    align-items: center;
+}
+
+.latest-release-track-img-container {
+    width: 20%;
+}
+
+.latest-release-track-img-container img {
+    max-width: 100%;
+}
+
+.latest-release-track-name-and-date-contianer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.latest-release-track-options a {
+    color: var(--tertiary-theme-color);
+    text-decoration: none;
 }
