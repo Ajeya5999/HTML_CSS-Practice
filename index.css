@@ -278,3 +278,24 @@ main {
     color: var(--tertiary-theme-color);
     text-decoration: none;
 }
+
+/* Popular Artists */
+
+    /* Popular Artist */
+
+.popular-artist {
+    width: 16%;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.popular-artist-img-container {
+    width: 90%;
+    margin: 5%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.popular-artist-img-container img {
+    max-width: 100%;
+}
