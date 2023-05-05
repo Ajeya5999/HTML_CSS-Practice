@@ -359,3 +359,21 @@ main {
     background-color: #ba8ab6;
     opacity: 0.5;
  }
+
+ /* Latest English */
+
+    /* Latest English Tacks */
+
+.latest-english-track {
+    width: 15%;
+    margin: 0 0.5%;
+    font-size: 0.7rem;
+}
+
+.latest-english-track-img-container {
+    width: 100%;
+}
+
+.latest-english-track-img-container img {
+    max-width: 100%;
+}
