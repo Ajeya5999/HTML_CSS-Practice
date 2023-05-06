@@ -238,14 +238,14 @@ main {
     transform: rotateY(300deg) translate3d(0, 0, var(--prism-radius));
 }
 
-/* Latest Release */
+    /* Latest Release */
 
 #latest-release-container {
     display: flex;
     flex-wrap: wrap;
 }
 
-    /* Latest Release Tracks */
+        /* Latest Release Tracks */
 
 .latest-release-track {
     width: 45%;
@@ -279,13 +279,13 @@ main {
     text-decoration: none;
 }
 
-/* Popular Artists */
+    /* Popular Artists */
 
 #popular-artists-container {
     margin-bottom: 30px;
 }
 
-    /* Popular Artists List */
+        /* Popular Artists List */
 
 .popular-artist {
     width: 16%;
@@ -304,9 +304,9 @@ main {
     max-width: 100%;
 }
 
-/* Suggested Genres */
+    /* Suggested Genres */
 
-    /* Suggested Genres List */
+        /* Suggested Genres List */
 
 .suggested-genre {
     width: 30%;
@@ -360,9 +360,9 @@ main {
     opacity: 0.5;
  }
 
- /* Latest English */
+    /* Latest English */
 
-    /* Latest English Tacks */
+        /* Latest English Tacks */
 
 .latest-english-track {
     width: 15%;
@@ -375,5 +375,57 @@ main {
 }
 
 .latest-english-track-img-container img {
+    max-width: 100%;
+}
+
+/* Queue */
+
+#queue {
+    display: inline-block;
+    position: fixed;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+    /* Queue Header*/
+
+#queue-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#queue-header a{
+    color: white;
+    text-decoration: none;
+}
+
+    /* Queue Content */
+
+#queue-content {
+    height: 79.2vh;
+    overflow: scroll;
+}
+
+        /* Queue Tracks */
+
+.queue-track {
+    margin: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.queue-track-info {
+    display: flex;
+    align-items: center;
+    font-size: 0.7rem;
+}
+
+.queue-track-img-container {
+    width: 20%;
+}
+
+.queue-track-img-container img {
     max-width: 100%;
 }
