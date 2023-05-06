@@ -395,9 +395,53 @@ main {
     align-items: center;
 }
 
-#queue-header a{
+#queue-header a {
     color: white;
     text-decoration: none;
+    transition: color 0.5s ease-in-out;
+}
+
+#queue-header a:hover {
+    color: lightgrey;
+}
+
+    /* Queue Options */
+
+#queue-options {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+#queue-options a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+#real-queue-options {
+    position: absolute;
+    top: 113px;
+    right: 0;
+    width: 10%;
+    background-color: white;
+    color: black;
+    z-index: 1;
+}
+
+#queue-options:target {
+    width: 100%;
+    height: 100%;
+}
+
+.queue-option {
+    width: 100%;
+    height: 40px;
+    padding: 10% 0 0 15%;
+    border: solid black 1px;
 }
 
     /* Queue Content */
