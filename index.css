@@ -405,7 +405,7 @@ main {
     color: lightgrey;
 }
 
-    /* Queue Options */
+        /* Queue Options */
 
 #queue-options {
     position: fixed;
@@ -472,4 +472,59 @@ main {
 
 .queue-track-img-container img {
     max-width: 100%;
+}
+
+/* Music Player */
+
+#music-player {
+    background-color: var(--secondary-theme-color);
+    color: var(--primary-theme-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3%;
+}
+
+#music-player > div {
+    width: 30%;
+}
+
+#music-player button {
+    background-color: var(--secondary-theme-color);
+    border-width: 0;
+    border-radius: 50%;
+    flex-grow: 1;
+}
+
+    /* Played Track */
+
+#played-track {
+    display: flex;
+}
+
+#played-track-img-container {
+    width: 20%;
+}
+
+#played-track-img-container img {
+    width: 100%;
+}
+
+#played-track-info {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 0.7rem;
+}
+
+    /* Music Player Options */
+
+#music-player-options-container > form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+#music-player-options-container input {
+    width: 100%;
 }

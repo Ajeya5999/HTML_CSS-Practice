@@ -403,13 +403,17 @@
                     Queue
                     <i class="fa fa-angle-down"></i>
                 </a>
-                <div id = queue-options>
+
+                <!-- Queue Options -->
+
+                <div id="queue-options">
                     <a href="#"></a>
                     <div id="real-queue-options">
                         <div class="queue-option">Playlist</div>
                         <div class="queue-option">Favourite Songs</div>
                     </div>
                 </div>
+                
             </div>
 
             <!-- Queue Content -->
@@ -774,6 +778,62 @@
             </div>
 
         </aside>
+
+        <!-- Music Player -->
+
+        <footer id="music-player">
+
+            <!-- Played Track -->
+
+            <div id="played-track">
+                <div id="played-track-img-container">
+                    <img src="./images/albums/borceleAtlantic.png" alt="Borcele Atlantic">
+                </div>
+                <div id="played-track-info">
+                    <span>Onism</span> 
+                    <span>John Lennon</span>
+                </div>
+                <div id="played-track-options">
+                    <i class="fa fa-heart-o"></i>
+                    <i class="	fa fa-eye-slash"></i>
+                </div>
+            </div>
+
+            <!-- Music Player Options -->
+
+            <div id="music-player-options-container">
+                <form>
+                    <button>
+                        <i class="fa fa-step-backward"></i>
+                    </button>
+                    <button id="play-music">
+                        <i class="fa fa-pause"></i>
+                    </button>
+                    <button>
+                        <i class="fa fa-step-forward"></i>
+                    </button>
+                    <input type="range" min="1" max="100" value="33">
+                </form>
+            </div>
+            
+            <!-- Music Player Setting -->
+
+            <div id="music-player-setting-container">
+                <form>
+                    <button>
+                        <i class="fa fa-stop"></i>
+                    </button>
+                    <button>
+                        <i class="fa fa-youtube-play"></i>
+                    </button>
+                    <input type="range" min="1" max="24" value="8">
+                    <button>
+                        <i class="fa fa-compress"></i>
+                    </button>
+                </form>
+            </div>
+
+        </footer>
 
     <script type="text/javascript" src="./index.js"></script>
     </body>
