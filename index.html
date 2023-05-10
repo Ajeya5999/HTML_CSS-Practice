@@ -138,7 +138,16 @@
                     <div class="latest-release-track">
                         <div class="latest-release-track-info">
                             <div class="latest-release-track-img-container">
-                                <img src="./images/albums/borceleAtlantic.png" alt="borceleAtlantic">
+
+                                <!-- Button to view Music Player -->
+
+                                <button id="latest-release-track-button">
+                                    <img src="./images/albums/borceleAtlantic.png" alt="borceleAtlantic">
+                                    <div id="latest-release-track-color-overlay">
+                                        <i class="fa fa-play" id="play-button"></i>
+                                    </div>
+                                </button>
+                                
                             </div>
                             <div class="latest-release-track-name-and-date-contianer">
                                 <div class="latest-release-track-name">Onism</div>
@@ -834,6 +843,8 @@
             </div>
 
         </footer>
+
+        <div class="whitespace" id="music-player-space"></div>
 
     <script type="text/javascript" src="./index.js"></script>
     </body>
