@@ -232,9 +232,14 @@
                         Zyan Malik
                     </div>
                     <div class="popular-artist">
-                        <div class="popular-artist-img-container">
-                            <img src="./images/artists/skrillex.jpg" alt="Skrillex">
-                        </div>
+                        <a href="./skrillex.html">
+                            <div class="popular-artist-img-container" id="home-carousel">
+                                <img src="./images/artists/skrillex.jpg" alt="Skrillex">
+                                <div id="latest-release-track-color-overlay">
+                                    <i class="fa fa-play" id="play-button"></i>
+                                </div>
+                            </div>
+                        </a>
                         <br>
                         Skrillex
                     </div>
@@ -844,7 +849,7 @@
 
         </footer>
 
-        <div class="whitespace" id="music-player-space"></div>
+        <div class="whitespace" id="music-player-space"></div> <!-- This is to compensate for body content getting overlapped by the fixed music player -->
 
     <script type="text/javascript" src="./index.js"></script>
     </body>

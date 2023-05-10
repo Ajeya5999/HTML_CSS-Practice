@@ -329,6 +329,10 @@ main {
     max-width: 100%;
 }
 
+#home-carousel {
+    position: relative;
+}
+
     /* Suggested Genres */
 
         /* Suggested Genres List */

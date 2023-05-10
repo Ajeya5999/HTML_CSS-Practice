@@ -1,0 +1,253 @@
+/* --- General Properties --- */
+
+:root {
+    --primary-theme-color: #3a3a3a;
+    --secondary-theme-color: #97d5c9;
+    --tertiary-theme-color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-theme-color);
+    color: var(--tertiary-theme-color);
+}
+
+div{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.whitespace {
+    width: 100%;
+}
+
+h1 {
+    color: var(--secondary-theme-color);
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h5 {
+    color: var(--secondary-theme-color);
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Site Header --- */
+
+header {
+    background-color: var(--secondary-theme-color);
+    color: var(--primary-theme-color);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+}
+
+    /* --- Logo And Name --- */
+
+#site-logo-container {
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#site-logo-img-container {
+    background-color: var(--primary-theme-color);
+    border-radius: 50%;
+}
+
+#site-logo-img-container img {
+    max-width: 60px;
+    max-height: 60px;
+}
+
+#site-name {
+    width: 70px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+    /* --- Content Table --- */
+
+#content-table ul {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#content-table a{
+    color: var(--primary-theme-color);
+    text-decoration: none;
+    transition: color 0.25s;
+}
+
+#content-table a:hover {
+    color: black;
+    transition: color 0.5s;
+}
+
+    /* --- Search Bar --- */
+
+#search-bar {
+    --search-bar-height: 22px;
+    height: var(--search-bar-height);
+}
+
+#search-bar form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-bar button {
+    background-color: var(--primary-theme-color);
+    height: var(--search-bar-height);
+    width: 20px;
+    margin: 0;
+    padding: 0 0 2px 0;
+    border-width: 0;
+    border-radius: 0;
+}
+
+#search-bar input {
+    background-color: var(--primary-theme-color);
+    color: var(--tertiary-theme-color);
+    height: var(--search-bar-height);
+    border-width: 0;
+}
+
+#search-bar i {
+    color: var(--tertiary-theme-color);
+}
+
+    /* --- User Profile --- */
+
+#user-profile {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#user-profile button {
+    background-color: var(--secondary-theme-color);
+    border-width: 0;
+}
+
+#user-pfp-container {
+    background-color: #2b2f3b;
+    padding: 0;
+    height: 60px;
+    width: 60px;
+    border: solid var(--primary-theme-color) 3px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#user-pfp-container img {
+    max-width: 60px;
+    max-height: 60px;   
+}
+
+/* --- Adding whitespace to compensate for header --- */
+
+#header-space {
+    height: 70px;
+}
+
+/* Site Content */
+
+main {
+    display: inline-block;
+    width: 70%;
+    padding: 3%;
+    box-sizing: border-box;
+}
+
+    /* Artist Info */
+
+#artist-info {
+    background-color: #3f4644;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#artist-img-container {
+    width: 40%;
+}
+
+#artist-img-container img {
+    max-width: 100%;
+}
+
+#about-artist {
+    width: 59%;
+    position: relative;
+}
+
+#artist-description {
+    margin-top: 30px;
+    font-size: 0.7rem;
+}
+
+#artist-options {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#artist-options > button {
+    width: 20%;
+    height: 35px;
+    background-color: var(--secondary-theme-color);
+    color: black;
+    border-width: 0;
+    border-radius: 0;
+}
+
+#artist-followers {
+    font-family: sans-serif;
+    font-size: 0.7rem;
+    position: absolute;
+    top: 25px;
+    right: 0;
+}
+
+/* Artist Tracks */
+
+#artist-tracks li {
+    background-color: #3b544f;
+}
+
+.artist-track {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.artist-track-info {
+    width: 50%;
+}
+
+.artist-track-img-container {
+    width: 15%;
+}
+
+.artist-track-img-container img {
+    max-width: 100%;
+}
