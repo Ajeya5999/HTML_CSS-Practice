@@ -294,6 +294,7 @@ aside {
 
 #similar-artists {
     position: relative;
+    margin-bottom: 20px;
 }
 
 #similar-artists-tracks {
@@ -338,5 +339,43 @@ aside {
     font-size: 0.7rem;
     position: absolute;
     right: 0;
-    top: 0;
+    top: 10px;
+}
+
+    /* Recently Played */
+
+#recetly-played {
+    position: relative;
+}
+
+#recently-played-tracks {
+    margin-top: 10px;
+}
+
+        /* Recently Played Tracks */
+
+.recently-played-track {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.recently-played-track-info {
+    width: 85%;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+}
+
+.recently-played-track-img-container {
+    width: 15%;
+    margin-right: 3%;
+}
+
+.recently-played-track-img-container img {
+    max-width: 100%;
+}
+
+.recently-played-track-options {
+    font-size: 0.7rem;
 }
