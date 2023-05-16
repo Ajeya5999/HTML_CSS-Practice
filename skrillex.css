@@ -4,6 +4,7 @@
     --primary-theme-color: #3a3a3a;
     --secondary-theme-color: #97d5c9;
     --tertiary-theme-color: white;
+    --quaternary-theme-color: #3b544f;
 }
 
 body {
@@ -25,6 +26,12 @@ div{
 
 h1 {
     color: var(--secondary-theme-color);
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
@@ -172,7 +179,7 @@ header {
 main {
     display: inline-block;
     width: 70%;
-    padding: 3%;
+    padding: 3% 3% 0 3%;
     box-sizing: border-box;
 }
 
@@ -227,27 +234,109 @@ main {
     right: 0;
 }
 
-/* Artist Tracks */
+    /* Artist Tracks */
 
 #artist-tracks li {
-    background-color: #3b544f;
+    background-color: var(--quaternary-theme-color);
+    position: relative;
 }
 
 .artist-track {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
+    padding: 1%;
     display: flex;
     justify-content: space-between;
-    
+    align-items: center;
 }
 
 .artist-track-info {
     width: 50%;
+    display: flex;
+    align-items: center;
 }
 
 .artist-track-img-container {
     width: 15%;
+    margin-right: 4%;
 }
 
 .artist-track-img-container img {
     max-width: 100%;
+}
+
+.artist-track-options {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 3%;
+}
+
+.marker-background {
+    background-color: var(--quaternary-theme-color);
+    height: 100%;
+    width: 5%;
+    position: absolute;
+    left: -5%;
+    top: 0;
+    z-index: -1;
+}
+
+/* Aside section */
+
+aside {
+    display: inline-block;
+    width: 29%;
+    margin-top: -550px;
+    box-sizing: border-box;
+}
+
+    /* Similar Artists */
+
+#similar-artists {
+    position: relative;
+}
+
+#similar-artists-tracks {
+    margin-top: 10px;
+}
+
+        /* Similar Artists Tracks */
+
+.similar-artists-track {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.similar-artists-track-info {
+    width: 85%;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+}
+
+.similar-artists-track-img-container {
+    width: 25%;
+    margin-right: 3%;
+}
+
+.similar-artists-track-img-container img {
+    max-width: 100%;
+}
+
+.similar-artists-track-options {
+    font-size: 0.7rem;
+}
+
+.similar-artists-track-options a {
+    color: var(--tertiary-theme-color);
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.view-all {
+    font-size: 0.7rem;
+    position: absolute;
+    right: 0;
+    top: 0;
 }

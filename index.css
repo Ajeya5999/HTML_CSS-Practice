@@ -177,10 +177,15 @@ main {
 }
 
 .rotate-button {
-    border-width: 0;
-    border-radius: 0;
+    border: solid var(--primary-theme-color) 3px;
+    border-radius: 20%;
     background-color: var(--primary-theme-color);
     color: var(--secondary-theme-color);
+    transition: border-color 100ms ease-in-out;
+}
+
+.rotate-button:hover {
+    border-color: var(--secondary-theme-color);
 }
 
 #rotate-left {
@@ -262,6 +267,7 @@ main {
 
 .latest-release-track-img-container {
     width: 20%;
+    margin-right: 3%;
 }
 
 .latest-release-track-img-container img {
@@ -497,6 +503,7 @@ main {
 
 .queue-track-img-container {
     width: 20%;
+    margin-right: 3%;
 }
 
 .queue-track-img-container img {
@@ -537,10 +544,11 @@ main {
 
 #played-track-img-container {
     width: 20%;
+    margin-right: 3%;
 }
 
 #played-track-img-container img {
-    width: 100%;
+    max-width: 100%;
 }
 
 #played-track-info {
