@@ -3,6 +3,7 @@
         <title>Music Player (Major Project 1)</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="index.css"> 
+        <meta name="viewport" content="Width=device-width, initial-scale=1">
     </head>
     <body>
 
@@ -56,6 +57,9 @@
             <!-- User Profile -->
 
             <div id="user-profile">
+                <button id="page-options">
+                    <i class="fa fa-navicon fa-2x"></i>
+                </button>
                 <button>
                     <i class="fa fa-bell fa-2x"></i>
                 </button>
@@ -838,9 +842,12 @@
                         <i class="fa fa-plus"></i>
                     </button>
                     <button>
-                        <i class="fa fa-youtube-play"></i>
+                        <i class="fa fa-headphones"></i>
                     </button>
-                    <input type="range" min="1" max="24" value="8">
+                    <div id="music-player-sound-setting">
+                        <i class="fa fa-bullhorn"></i>
+                        <input type="range" min="1" max="24" value="8">
+                    </div>
                     <button>
                         <i class="fa fa-compress"></i>
                     </button>

@@ -4,9 +4,12 @@
     --primary-theme-color: #3a3a3a;
     --secondary-theme-color: #97d5c9;
     --tertiary-theme-color: white;
+    --panel-height: 11vh;
 }
 
 body {
+    min-width: 320px;
+    min-height: 720px;
     margin: 0;
     padding: 0;
     background-color: var(--primary-theme-color);
@@ -33,6 +36,7 @@ h3 {
 header {
     background-color: var(--secondary-theme-color);
     color: var(--primary-theme-color);
+    height: var(--panel-height);
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -44,7 +48,8 @@ header {
     /* --- Logo And Name --- */
 
 #site-logo-container {
-    width: 140px;
+    width: 15%;
+    min-width: 110px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,26 +57,31 @@ header {
 
 #site-logo-img-container {
     background-color: var(--primary-theme-color);
+    width: 39%;
+    min-width: 53px;
     border-radius: 50%;
 }
 
 #site-logo-img-container img {
-    max-width: 60px;
-    max-height: 60px;
+    max-width: 100%;
 }
 
 #site-name {
-    width: 70px;
+    width: 50%;
     font-family: sans-serif;
     font-weight: bold;
 }
 
     /* --- Content Table --- */
 
+#content-table {
+    width: 30%;
+}
+
 #content-table ul {
     margin: 0;
     padding: 0;
-    width: 300px;
+    width: 100%;
     list-style-type: none;
     display: flex;
     justify-content: space-between;
@@ -92,11 +102,12 @@ header {
     /* --- Search Bar --- */
 
 #search-bar {
-    --search-bar-height: 22px;
-    height: var(--search-bar-height);
+    --search-bar-height: 30%;
+    height: 100%;
 }
 
 #search-bar form {
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,7 +137,8 @@ header {
     /* --- User Profile --- */
 
 #user-profile {
-    width: 100px;
+    width: 10%;
+    min-width: 97px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -134,28 +146,33 @@ header {
 
 #user-profile button {
     background-color: var(--secondary-theme-color);
+    color: var(--primary-theme-color);
     border-width: 0;
+}
+
+#page-options {
+    width: 0;
+    visibility: hidden;
 }
 
 #user-pfp-container {
     background-color: #2b2f3b;
     padding: 0;
-    height: 60px;
-    width: 60px;
+    width: 60%;
+    min-width: 56px;
     border: solid var(--primary-theme-color) 3px;
     border-radius: 50%;
     overflow: hidden;
 }
 
 #user-pfp-container img {
-    max-width: 60px;
-    max-height: 60px;   
+    max-width: 100%;  
 }
 
 /* --- Adding whitespace to compensate for header --- */
 
 #header-space {
-    height: 70px;
+    height: var(--panel-height);
 }
 
 /* --- Site Content --- */
@@ -169,7 +186,7 @@ main {
     /* --- Playlist Carousel --- */
 
 #playlist-carousel-container {
-    /* min-width: 716px; */
+    /* min-width: 630px; */
     height: 245px;
     display: flex;
     justify-content: space-between;
@@ -422,6 +439,8 @@ main {
     box-sizing: border-box;
 }
 
+
+
     /* Queue Header*/
 
 #queue-header {
@@ -515,7 +534,7 @@ main {
 #music-player {
     background-color: var(--secondary-theme-color);
     color: var(--primary-theme-color);
-    height: 60px;
+    height: var(--panel-height);
     position: fixed;
     bottom: 0;
     display: flex;
@@ -557,6 +576,7 @@ main {
     align-items: center;
     flex-wrap: wrap;
     font-size: 0.7rem;
+    margin-right: 2%;
 }
 
     /* Music Player Options */
@@ -587,8 +607,146 @@ main {
     align-items: center;
 }
 
+#music-player-sound-setting {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#music-player-sound-setting input {
+    width: 80%;
+}
+
     /* --- Adding whitespace to compensate for Music Player --- */
 
 #music-player-space {
     height: 0;
 }
+
+/* Adding responsiveness */
+
+@media screen and (max-width: 900px) {
+    #content-table {
+        font-size: 0.8rem;
+    }
+
+    #page-options {
+        width: auto;
+        visibility: visible;
+    }
+
+    main {
+        width: 100%;
+    }
+    
+    #queue {
+        visibility: hidden;
+    }    
+
+    #played-track {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    header > div {
+        width: 33%;
+    }
+
+    #site-name {
+        font-size: 0.8rem;
+    }
+
+    #content-table {
+        width: 0;
+        visibility: hidden;
+    }
+
+    #search-bar input {
+        width: 50%;
+    }
+
+    #playlist-carousel-container {
+        padding: 0 5%;
+    }
+
+    #playlist-carousel {
+        --prism-radius: 180px;
+        bottom: 70px;
+    }
+
+    .carousel-face {
+        width: 150px;
+    }
+
+    #popular-artists-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .popular-artist {
+        width: 10%;
+        font-size: 0.5rem;
+    }
+
+    #suggested-genres-cotainer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .suggested-genre {
+        width: 25%;
+        font-size: 0.7rem;
+    }
+
+    #latest-english-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .latest-english-track {
+        width: 10%;
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    #search-bar {
+        width: 0;
+        visibility: hidden;
+    }
+
+    .latest-release-track {
+        font-size: 0.7rem;
+    }
+
+    #playlist-carousel-container {
+        padding: 0 15%;
+        height: 100px;
+    }
+    
+    .rotate-button {
+        font-size: 0.3rem;
+    }
+
+    #playlist-carousel {
+        --prism-radius: 80px;
+        bottom: 25px;
+    }
+
+    .carousel-face {
+        width: 50px;
+    }
+
+    .suggested-genre {
+        font-size: 0.5rem;
+    }
+
+    #played-track-info {
+        font-size: 0.5rem;
+    }
+
+    #played-track-options {
+        font-size: 0.7rem;
+    }
+} 

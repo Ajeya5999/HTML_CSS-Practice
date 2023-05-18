@@ -49,5 +49,5 @@ function handlebtn(isLeft){
 function viewPlayer(){
     queueContent.style = "height: 69.6vh"
     musicPlayer.style = "visibility: visible";
-    playerSpace.style = "height: 60px";
+    playerSpace.style = "height: 11vh";
 }
